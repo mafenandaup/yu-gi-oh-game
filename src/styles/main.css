@@ -34,9 +34,11 @@
 .container-left{
     width: 35%;
     min-width: 18.7rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+       border: .15rem solid black;
 }
 
 .container-right{
@@ -118,4 +120,12 @@ font-size: 0.8rem;
     height: 11.2rem;
     width: 8rem;
     border-radius: .5rem;
+}
+
+.card{
+transition: transform ease-out 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.2);
 }
