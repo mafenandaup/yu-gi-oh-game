@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="src/assets/favicon/Favicon.ico" type="image/x-icon">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/buttons.css">
+
+    <!-- Fonte press Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Yu-gi-oh!</title>
+</head>
+
+<body>
+    <div class="bg-video">
+        <video class="video" autoplay loop muted>
+            <source src="src/assets/video/yugi.mp4" type="video/mp4">
+        </video>
+    </div>
+    <section class="container">
+        <div class="container-left framed-golden-2">
+            <div class="score-box frame">
+                <span id="score-points">Win: 0 | Lose: 0</span>
+            </div>
+            <div class="menu-avatar">
+                <img src="" alt="" id="card-img">
+            </div>
+            <div class="card-details frame">
+                <p id="card-name">a</p>
+                <p id="card-type">a</p>
+            </div>
+        </div>
+
+
+        <div class="container-right">
+            <div class="card-box-container ">
+
+                <div class="card-box framed" id="oponent-cards"></div>
+
+                <div class="card-box-versus">
+                    <div class="versus-top">
+
+                        <div class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px" src="" alt="">
+                        </div>
+
+                        <img src="src/assets/icons/millenium2.png" height="100px" alt="">
+
+                        <div class="card-infield">
+                            <img id="oponent-field-card" height="180px" width="125px" src="" alt="">
+                        </div>
+
+                    </div>
+                    <div class="versus-bottom">
+                        <button class="rpgui-button" id="next-duel" onclick="resetDuel()">ganhou?</button>
+                    </div>
+                </div>
+
+                <div class="card-box framed" id="player-cards"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="src/scripts/engine.js"></script>
+</body>
+
+</html>
